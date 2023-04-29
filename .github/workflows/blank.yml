@@ -26,4 +26,4 @@ jobs:
      - name: env report
        run: |
         ls -la
-        pintenv
+        printenv
