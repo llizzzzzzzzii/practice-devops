@@ -17,11 +17,13 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-     - uses: actions/checkout@v3
-     - name: Run a one-line script
-       run: echo Hello, world!
+     
+     - name: ls
+       run: ls -la
        
-     - name: Run a multi-line script
+     - uses: actions/checkout@v3
+      
+     - name: env report
        run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+        ls -la
+        pintenv
